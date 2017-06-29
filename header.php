@@ -11,10 +11,12 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+<?php $home =  get_template_directory_uri();?> 
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<link rel="stylesheet" type="text/css" href="<?= $home; ?>/style.css">
 
 <?php wp_head(); ?>
 </head>
@@ -149,7 +151,7 @@
 			if( empty( $foodhunt_header_title_bar ) ) {
 				$foodhunt_no_header_image = ' header-title-no-img';
 			} ?>
-			<!--<div class="header-titlebar-wrapper<?php echo esc_attr( $foodhunt_no_header_image) ?> clearfix">
+			<div class="header-titlebar-wrapper<?php echo esc_attr( $foodhunt_no_header_image) ?> clearfix">
 
 				<?php if( !empty( $foodhunt_header_title_bar ) ) { ?>
 					<div class="header-titlebar-overlay"> </div>
@@ -159,5 +161,5 @@
 				<div class="header-title-wrap">
 					<?php foodhunt_header_title(); ?>
 				</div>
-			</div>-->
+			</div>
 		<?php } ?>

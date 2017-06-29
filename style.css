@@ -3162,7 +3162,7 @@ body {
 
 .header-titlebar-wrapper {
     background: rgba(0, 0, 0, 0.016) none repeat scroll 0 0;
-    border-bottom: 4px solid #dd0103;
+    border-bottom: 4px solid #000;
     height: 300px;
     overflow: hidden;
 }
